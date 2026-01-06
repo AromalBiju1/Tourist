@@ -66,7 +66,7 @@ To build a **user-friendly tourist assistance website** that helps travelers exp
 ## 🛠️ Technology Stack
 
 ### Frontend
-- **Framework:** Next.js
+- **Framework:** React.js
 - **Styling:** Tailwind CSS
 - **Map Library:** Leaflet.js
 - **Map Data:** OpenStreetMap (OSM)
@@ -107,7 +107,7 @@ The **Tourist Assistance & Safety Website** delivers a secure and intelligent tr
 - Safety-aware navigation with real-time risk analysis
 - Emergency support tools
 
-By leveraging **Next.js**, **OpenStreetMap**, and **Leaflet.js**, the platform remains fast, scalable, open-source friendly, and privacy-conscious—making it ideal for modern tourism applications.
+By leveraging **React.js**, **OpenStreetMap**, and **Leaflet.js**, the platform remains fast, scalable, open-source friendly, and privacy-conscious—making it ideal for modern tourism applications.
 
 ---
 
