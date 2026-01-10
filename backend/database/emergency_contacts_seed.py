@@ -1,7 +1,6 @@
 # India Emergency Contacts Seed Data
 # Source: Official government helplines and Wikipedia
 # Use this to seed your EmergencyContact table
-
 NATIONAL_HELPLINES = [
     {"name": "Emergency (All Services)", "number": "112", "type": "emergency", "category": "national"},
     {"name": "Police", "number": "100", "type": "police", "category": "national"},
@@ -141,6 +140,6 @@ def seed_emergency_contacts(db_session):
 
 
 if __name__ == "__main__":
-    from database.database import SessionLocal
-    db = SessionLocal()
+    from database.database import sessionLocal
+    db = sessionLocal()
     seed_emergency_contacts(db)
