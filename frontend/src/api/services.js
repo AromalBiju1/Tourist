@@ -65,11 +65,22 @@ export const login = async (email, password) => {
     return response.data;
 };
 
-export const register = async (userData) => {
-    const response = await api.post('/api/auth/register', userData);
+export const signup = async (userData) => {
+    const response = await api.post('/api/auth/signup', userData);
     return response.data;
 };
 
 export const logout = () => {
     localStorage.removeItem('token');
+    localStorage.removeItem('user');
+};
+
+export const updateProfile = async (userData) => {
+    const response = await api.put('/api/auth/profile', userData);
+    return response.data;
+};
+
+export const getCurrentUser = async () => {
+    const response = await api.get('/api/auth/me');
+    return response.data;
 };

@@ -1,13 +1,10 @@
 from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from auth.deps import get_current_user
-from database import schemas
-
+from routers.auth.deps import get_current_user
+from database import schemas,models
 from database.database import engine, Base   
-from database import models   
-
-from auth.routes import router as auth_router
+from routers.auth.routes import router as auth_router
 
 app = FastAPI()
 

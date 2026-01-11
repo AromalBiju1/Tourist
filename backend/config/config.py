@@ -3,9 +3,8 @@ import os
 
 load_dotenv()
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 database_url = os.getenv("DATABASE_URL")
+private_key = os.getenv("JWT_PRIVATE_KEY_PATH")
+public_key = os.getenv("JWT_PUBLIC_KEY_PATH")
 
-private_key = os.path.join(BASE_DIR, ".keys", "private.pem")
-public_key = os.path.join(BASE_DIR, ".keys", "public.pem")
+
